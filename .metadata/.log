@@ -4615,3 +4615,6 @@ Caused by: java.lang.IllegalStateException: Accept exceeded fixed size of 3
 	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$18(LanguageServiceAccessor.java:626)
 	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
 	... 6 more
+
+!ENTRY org.eclipse.wst.server.core 4 0 2023-01-10 17:43:08.713
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
