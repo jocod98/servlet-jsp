@@ -21,7 +21,7 @@ public class CalcPage extends HttpServlet{
 		
 		if(cookies!=null)
 			for(Cookie c :cookies) 
-				if(c.getName().equals("exp")) { //쿠키 이름이 op인것 찾아서 value 를 operator에 부
+				if(c.getName().equals("op")) { //쿠키 이름이 op인것 찾아서 value 를 operator에 부
 					exp = c.getValue();
 					break;
 				}
@@ -56,7 +56,7 @@ public class CalcPage extends HttpServlet{
 		out.write("	<form action = \"calc3\" method = \"post\">");
 		out.write("	<table>");
 		out.write("		<tr>");
-		out.printf("			<td class = \"output\" colspan = \"4\">%s</td>",exp);
+		out.printf("			<td class = \"output\" colspan = \"4\">%d</td>",3+4);
 		out.write("		</tr>");
 		out.write("		<tr>");
 		out.write("			<td><input type = \"submit\" name = \"operator\" value =\"CE\" /> </td>");
